@@ -1,6 +1,14 @@
-<h1>heading 1</h1>
-<h2>heading 2</h2>
-<h3>heading 3</h3>
-<h4>heading 4</h4>
-<h5>heading 5</h5>
-<h6>heading 6</h6>
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-3">
+    <table class="table">
+        <thead>
+        <tr class="thead-dark">
+            <th><a href="http://127.0.0.1:8000/pybo/Notice/" target="_self">공지게시판</a></th>
+            <th><a href="http://127.0.0.1:8000/pybo/Free/" target="_self">자유게시판</a></th>
+            <th><a href="http://127.0.0.1:8000/pybo/Info/" target="_self">정보게시판</a></th>
+        </tr>
+        </thead>
+    </table>
+</div>
+{% endblock %}
